@@ -86,7 +86,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 20;
+  z-index: 30;
   height: 80px;
   width: 100%;
 }
@@ -143,7 +143,7 @@ body {
 .profile-image {
   width: 150px;
   border-radius: 70%;
-  animation: pulse 2s infinite ;
+  animation: pulse 4s infinite ;
 }
 /* animation for profile image*/
 @keyframes bounce {
@@ -228,7 +228,7 @@ body {
   margin: 1rem 0;
   padding: 1rem 0;
   border-left: 2px solid #5C0FA8;
-  max-height: 300px;
+  max-height: 500px;
 }
 
 /* Experience */
@@ -463,7 +463,7 @@ body {
 .intro-text.quote {
   font-family: 'Pacifico', cursive; /* Cursive font for the quote */
   font-size: 20px;
-  color: #555; /* Optional: Adjust color */
+  color: #5C0FA8; /* Optional: Adjust color */
 }
 
 /* Importing Google Font */
