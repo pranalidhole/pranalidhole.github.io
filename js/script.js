@@ -65,3 +65,15 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+//Customizing day for greeting
+function getGreeting() {
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const today = new Date();
+  const dayName = days[today.getDay()];
+  return `Hi There! Happy ${dayName}! I am Pranali.`;
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.getElementById('greeting').textContent = getGreeting();
+});
