@@ -143,7 +143,6 @@ body {
 .profile-image {
   width: 150px;
   border-radius: 70%;
-  animation: pulse 4s infinite ;
 }
 /* animation for profile image*/
 @keyframes bounce {
@@ -324,7 +323,7 @@ body {
 /* Responsiveness */
 
 @media (max-width: 1000px) {
-  .project {
+  .project .article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -396,7 +395,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .project {
+  .project .article {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -470,3 +469,46 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
+/* Articles */
+#articles {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto 5rem;
+}
+
+#articles .btn {
+  align-self: center;
+  margin: 2rem 0;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(250px, auto);
+  grid-gap: 0.9rem;
+}
+
+.card .article-bio p {
+  font-size: 0.83rem;
+}
+
+.card .article-bio h3 {
+  font-size: 0.9rem;
+}
+
+.article-info {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.article-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  top: 160px;
+  left: 10px;
+}

@@ -164,6 +164,15 @@ h2::selection {
   background: url(../assets/project/project-uploading-soon.png) center center/cover;
 }
 
+/* Article 1*/
+.article .card:nth-child(1) {
+  background: url(../assets/articles/marzullo-algo.png) center center/cover;
+}
+
+.article .card:nth-child(2) {
+  background: url(../assets/articles/bfs-algo.png) center center/cover;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .header-container {
